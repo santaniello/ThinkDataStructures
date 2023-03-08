@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="fsantaniello-Inspiron-5570" name="com.allendowney.javacs.MyArrayListTest" skipped="0" tests="1" time="0.0" timestamp="2023-03-07T12:44:41">
+  <properties>
+    <property name="java.vendor" value="GraalVM Community" />
+    <property name="env.SESSION_MANAGER" value="local/fsantaniello-Inspiron-5570:@/tmp/.ICE-unix/2062,unix/fsantaniello-Inspiron-5570:/tmp/.ICE-unix/2062" />
+    <property name="env.IM_CONFIG_PHASE" value="1" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="env.PWD" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code" />
+    <property name="env.LANG" value="pt_BR.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/home/fsantaniello/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/lib/ant" />
+    <property name="java.runtime.version" value="17.0.5+8-jvmci-22.3-b08" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/plasma.default.path" />
+    <property name="env.XDG_SESSION_CLASS" value="user" />
+    <property name="jdk.internal.vm.ci.enabled" value="true" />
+    <property name="env.XDG_VTNR" value="1" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="user.name" value="fsantaniello" />
+    <property name="env.USER" value="fsantaniello" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.DESKTOP_SESSION" value="plasma" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="KDE" />
+    <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fsantaniello/.local/share/JetBrains/Toolbox/scripts" />
+    <property name="user.language" value="pt" />
+    <property name="env.XDG_SESSION_DESKTOP" value="KDE" />
+    <property name="sun.boot.library.path" value="/home/fsantaniello/.sdkman/candidates/java/22.3.r17-grl/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="JavaCS" />
+    <property name="env.KDE_SESSION_UID" value="1000" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="java.version" value="17.0.5" />
+    <property name="env.KDE_FULL_SESSION" value="true" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.SSH_AGENT_PID" value="1879" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.SHLVL" value="0" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.XCURSOR_THEME" value="breeze_cursors" />
+    <property name="java.class.version" value="61.0" />
+    <property name="env.KDE_SESSION_VERSION" value="5" />
+    <property name="user.country" value="BR" />
+    <property name="ant.file.JavaCS" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/build.xml" />
+    <property name="java.home" value="/home/fsantaniello/.sdkman/candidates/java/22.3.r17-grl" />
+    <property name="env.PAM_KWALLET5_LOGIN" value="/run/user/1000/kwallet5.socket" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="os.version" value="5.15.0-67-generic" />
+    <property name="ant.file" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/build.xml" />
+    <property name="env.LOGNAME" value="fsantaniello" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="17.0.5+8-jvmci-22.3-b08" />
+    <property name="env.LANGUAGE" value="pt_BR:pt:en" />
+    <property name="ant.library.dir" value="/home/fsantaniello/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/lib/ant/lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session1" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.XDG_SESSION_TYPE" value="x11" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.KDE_APPLICATIONS_AS_SCOPE" value="1" />
+    <property name="target" value="1.7" />
+    <property name="user.home" value="/home/fsantaniello" />
+    <property name="java.version.date" value="2022-10-18" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="https://www.graalvm.org/" />
+    <property name="env.XDG_SEAT" value="seat0" />
+    <property name="java.vm.vendor" value="GraalVM Community" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.javacs.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/junit/TEST-com.allendowney.javacs.MyArrayListTest.xml crashfile=/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/junitvmwatcher9299462605307226234.properties propsfile=/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/junit18060445630561153482.properties" />
+    <property name="java.class.path" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/jedis-2.8.0.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/jsoup-1.8.3.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/junit-4.12.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/hamcrest-core-1.3.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/jcommon-1.0.23.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/jfreechart-1.0.19.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/servlet.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/ant-junit.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/commons-math3-3.6.jar:/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code/lib/hamcrest-library-1.3.jar:/home/fsantaniello/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/lib/ant/lib/ant.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+    <property name="env.XDG_SESSION_ID" value="3" />
+    <property name="native.encoding" value="UTF-8" />
+    <property name="jdk.debug" value="release" />
+    <property name="ant.file.type.JavaCS" value="file" />
+    <property name="env.QT_ACCESSIBILITY" value="1" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="17" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.GTK_RC_FILES" value="/etc/gtk/gtkrc:/home/fsantaniello/.gtkrc:/home/fsantaniello/.config/gtkrc" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/home/fsantaniello" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="https://github.com/oracle/graal/issues" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-XXXXXX3vipJc/agent.1752" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
+    <property name="user.dir" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code" />
+    <property name="env.XAUTHORITY" value="/home/fsantaniello/.Xauthority" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/plasma.mandatory.path" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.GTK2_RC_FILES" value="/etc/gtk-2.0/gtkrc:/home/fsantaniello/.gtkrc-2.0:/home/fsantaniello/.config/gtkrc-2.0" />
+    <property name="env.XCURSOR_SIZE" value="24" />
+    <property name="basedir" value="/home/fsantaniello/Documentos/Workspace-Java/ThinkDataStructures/code" />
+    <property name="ant.java.version" value="17" />
+    <property name="ant.core.lib" value="/home/fsantaniello/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/lib/ant/lib/ant.jar" />
+    <property name="env.QT_AUTO_SCREEN_SCALE_FACTOR" value="0" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.GPG_AGENT_INFO" value="/run/user/1000/gnupg/S.gpg-agent:0:1" />
+    <property name="env.SYSTEMD_EXEC_PID" value="1735" />
+    <property name="java.specification.version" value="17" />
+    <property name="env.XDG_CONFIG_DIRS" value="/home/fsantaniello/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings" />
+    <property name="ant.project.invoked-targets" value="MyArrayListTest" />
+    <property name="java.vendor.version" value="GraalVM CE 22.3.0" />
+  </properties>
+  <error message="com.allendowney.javacs.MyArrayListTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: com.allendowney.javacs.MyArrayListTest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
