@@ -80,9 +80,50 @@ public class MyLinkedList<E> implements List<E> {
 		return true;
 	}
 
+
+
 	@Override
 	public void add(int index, E element) {
-		//TODO: FILL THIS IN!
+		isIndexOutOfBounds(index);
+
+		if(index == 0){
+			Node newNode = new Node(head.data);
+			newNode.next =  getNode(1);
+			head.data = element;
+			head.next = newNode;
+			size++;
+			return;
+		}
+
+		add(element);
+
+		if(isTheLastNode(getNode(index))){
+			Node noAnterior = getNode(index - 1);
+			Node novoNode = getLastNode();
+			Node nodeAtual = getNode(index);
+			noAnterior.next = novoNode;
+			novoNode.next = nodeAtual;
+			return;
+		}
+
+		// add the element to get the resizing
+		Node noAnterior = getNode(index - 1);
+		Node novoNode = getLastNode();
+		Node nodeAtual = getNode(index);
+		Node noPosterior = getNode(index + 1);
+
+		noAnterior.next = novoNode;
+		novoNode.next = nodeAtual;
+		nodeAtual.next =noPosterior;
+		noPosterior.next = null;
+	}
+
+	private Node getLastNode(){
+		Node node = head;
+		while (!isTheLastNode(node))
+			node = node.next;
+
+		return node;
 	}
 
 	@Override
@@ -126,14 +167,19 @@ public class MyLinkedList<E> implements List<E> {
 		return node.data;
 	}
 
+	private void isIndexOutOfBounds(int index){
+		if (index < 0 || index >= size) {
+
+			throw new IndexOutOfBoundsException();
+		}
+	}
+
 	/** Returns the node at the given index.
 	 * @param index
 	 * @return
 	 */
 	private Node getNode(int index) {
-		if (index < 0 || index >= size) {
-			throw new IndexOutOfBoundsException();
-		}
+		isIndexOutOfBounds(index);
 		Node node = head;
 		for (int i=0; i<index; i++) {
 			node = node.next;
@@ -141,10 +187,26 @@ public class MyLinkedList<E> implements List<E> {
 		return node;
 	}
 
+
 	@Override
 	public int indexOf(Object target) {
-		//TODO: FILL THIS IN!
+		int position = 0;
+		Node node = head ;
+		// loop until the last node
+		for (; !isTheLastNode(node);node = node.next) {
+			if(equals(target, node.data))
+				return position;
+			position++;
+		}
+		if(isTheLastNode(node)){
+			if(equals(target, node.data))
+				return position;
+		}
 		return -1;
+	}
+
+	private boolean isTheLastNode(Node node){
+		return (node.next == null) ? true : false;
 	}
 
 	/** Checks whether an element of the array is the target.

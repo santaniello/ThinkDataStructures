@@ -80,9 +80,9 @@ public class MyArrayListTest {
 		//System.out.println(Arrays.toString(mal.toArray()));
 		assertThat(mylist.get(0), is(6));
 
-		mylist.add(5, 7);
+		mylist.add(4, 7);
 		//System.out.println(Arrays.toString(mal.toArray()));
-		assertThat(mylist.get(5), is(new Integer(7)));
+		assertThat(mylist.get(4), is(new Integer(7)));
 	}
 
 	/**
