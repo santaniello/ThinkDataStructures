@@ -132,8 +132,7 @@ public class MyArrayList<T> implements List<T> {
 	 *
 	 * Handles the special case that the target is null.
 	 *
-	 * @param target
-	 * @param object
+
 	 */
 	private boolean equals(Object target, Object element) {
 		if (target == null) {
@@ -194,33 +193,33 @@ public class MyArrayList<T> implements List<T> {
 	}
 
 	/*** Minha solução **/
-//	@Override
-//	public T remove(int index) {
-//		isIndexOutOfBounds(index);
-//		T previousElement = this.array[index];
-//		T[] newArray = (T[]) new Object[size - 1];
-//		int j = 0;
-//		for(int x =0; x < this.size;x++){
-//			if(x != index) {
-//				newArray[j] = this.array[x];
-//				j++;
-//			}
-//		}
-//		this.array = newArray;
-//		this.size = j;
-//		return previousElement;
-//	}
-
-	/*** Solução do autor (Melhor) **/
 	@Override
 	public T remove(int index) {
-		T element = get(index);
-		for (int i=index; i<size-1; i++) {
-			array[i] = array[i+1];
+		isIndexOutOfBounds(index);
+		T previousElement = this.array[index];
+		T[] newArray = (T[]) new Object[size - 1];
+		int j = 0;
+		for(int x =0; x < this.size;x++){
+			if(x != index) {
+				newArray[j] = this.array[x];
+				j++;
+			}
 		}
-		size--;
-		return element;
+		this.array = newArray;
+		this.size = j;
+		return previousElement;
 	}
+
+	/*** Solução do autor (Melhor) **/
+//	@Override
+//	public T remove(int index) {
+//		T element = get(index);
+//		for (int i=index; i<size-1; i++) {
+//			array[i] = array[i+1];
+//		}
+//		size--;
+//		return element;
+//	}
 
 	@Override
 	public boolean removeAll(Collection<?> collection) {

@@ -17,7 +17,6 @@ import org.junit.Test;
  *
  */
 public class MyArrayListTest {
-
 	protected List<Integer> mylist;
 	protected List<Integer> list;
 

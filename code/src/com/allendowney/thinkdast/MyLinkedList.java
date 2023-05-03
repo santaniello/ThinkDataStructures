@@ -213,8 +213,6 @@ public class MyLinkedList<E> implements List<E> {
 	 *
 	 * Handles the special case that the target is null.
 	 *
-	 * @param target
-	 * @param object
 	 */
 	private boolean equals(Object target, Object element) {
 		if (target == null) {
@@ -268,11 +266,51 @@ public class MyLinkedList<E> implements List<E> {
 		return true;
 	}
 
+	/*** Minha solução **/
 	@Override
 	public E remove(int index) {
-		//TODO: FILL THIS IN!
-		return null;
+		E element = get(index);
+		if(index==0){
+			if(isTheLastNode(getNode(index))){
+				head = null;
+				size--;
+				return element;
+			}
+			Node posterior = getNode(index+1);
+			head = posterior;
+			size--;
+			return element;
+		}
+
+		if(isTheLastNode(getNode(index))){
+			Node anterior = getNode(index-1);
+			anterior.next = null;
+			size--;
+			return element;
+		}
+
+		Node anterior = getNode(index-1);
+		Node posterior = getNode(index+1);
+		anterior.next = posterior;
+		size--;
+		return element;
 	}
+
+	/**
+	 * Solução do Autor ...
+	 * */
+//	@Override
+//	public E remove(int index) {
+//		E element = get(index);
+//		if (index == 0) {
+//			head = head.next;
+//		} else {
+//			Node node = getNode(index-1);
+//			node.next = node.next.next;
+//		}
+//		size--;
+//		return element;
+//	}
 
 	@Override
 	public boolean removeAll(Collection<?> collection) {
